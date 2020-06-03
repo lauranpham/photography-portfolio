@@ -1,0 +1,9 @@
+<div class="cards">
+<% @photos.each do |photo| %>
+    <div class="card">
+        <%= image_tag asset_path(photo.src)%>
+        <h3><%=photo.title%></h3>
+        <p><%=photo.description%></p>
+    </div>
+<% end %>
+    
