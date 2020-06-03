@@ -1,7 +1,15 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>ExplorerLaura</title>
+    <title>Explorer-Laura</title>
+    <link rel="shortcut icon" href="images/profile_photo.JPG" />
+    <meta name="description" content= "Photography Portfolio of Laura Pham">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="application.scss">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+    <link href="/your-path-to-fontawesome/css/fontawesome.css" rel="stylesheet">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -10,6 +18,7 @@
   </head>
 
   <body>
+    <%= render "shared/navbar" %>
     <%= yield %>
   </body>
 </html>
