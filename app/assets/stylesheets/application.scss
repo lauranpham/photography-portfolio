@@ -12,6 +12,8 @@
 @import "components/index";
 @import "pages/index";
 
+@import url("https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Playfair+Display|Roboto:300|Staatliches&display=swap");
+
 html {
   scroll-behavior: smooth;
 }
@@ -24,7 +26,9 @@ body {
   background-size: cover;
   /* font-size: 10px; */
   margin: 0px;
-  background-size: 100vw auto;
+  width: 100vw;
+  height: 100vh;
+  background-size: 100vw;
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
@@ -36,15 +40,6 @@ p {
 h1,
 h2 {
   font-family: "Staatliches", cursive;
-}
-
-#heading-big {
-  color: white;
-  /*color: #D391A2;*/
-  letter-spacing: 0.2em;
-  text-shadow: 5px 5px 10px rgba(10, 10, 10, 0.1);
-  font-size: 200%;
-  margin: 0 auto;
 }
 
 h2 {
@@ -68,9 +63,11 @@ p {
 }
 
 .nav-arrow:hover {
-  color: pink;
+  color: #de744d;
 }
-
+a:hover {
+  color: #de744d;
+}
 @media (min-width: 1000px) {
   /* For a screen < 960px, this CSS will be read */
   body {
@@ -133,10 +130,6 @@ p {
   h2,
   p {
     margin: 10px 5px;
-  }
-
-  #heading-big {
-    width: 60%;
   }
 
   .avatar {

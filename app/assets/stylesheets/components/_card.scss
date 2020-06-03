@@ -12,12 +12,10 @@
   justify-content: center;
   flex-direction: column;
   text-align: center;
-  margin: 15px;
-  padding: 30px 30px;
-  padding-bottom: 0px;
+  padding: 10px;
   box-sizing: border-box;
-  border-radius: 10px;
-  box-shadow: 0 0 5px rgb(230, 230, 230);
+  border-radius: 2px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   p {
     min-height: 72px !important;
   }
@@ -26,8 +24,9 @@
   }
 }
 .card img {
-  max-height: 250px;
+  max-height: 100%;
   margin-bottom: 10px;
+  width: 100%;
 }
 
 .landing-card-image {
