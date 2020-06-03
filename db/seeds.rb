@@ -5,3 +5,9 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+japan_count = 1
+10.times do 
+    Photo.create!(src: "japan" + japan_count.to_s + ".jpeg", name: "japan" + japan_count.to_s, description: "A photo walk through japan" )
+    japan_count += 1
+end 
+

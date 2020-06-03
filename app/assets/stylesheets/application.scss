@@ -1,0 +1,181 @@
+// Graphical variables
+@import "config/fonts";
+@import "config/colors";
+@import "config/bootstrap_variables";
+
+// External libraries
+// @import "bootstrap/scss/bootstrap";
+// @import "font-awesome-sprockets";
+// @import "font-awesome";
+
+// Your CSS partials
+@import "components/index";
+@import "pages/index";
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: #757575;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  background-image: asset-data-url("banner.jpg");
+  background-size: cover;
+  /* font-size: 10px; */
+  margin: 0px;
+  background-size: 100vw auto;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+p {
+  font-size: 20px;
+}
+
+h1,
+h2 {
+  font-family: "Staatliches", cursive;
+}
+
+#heading-big {
+  color: white;
+  /*color: #D391A2;*/
+  letter-spacing: 0.2em;
+  text-shadow: 5px 5px 10px rgba(10, 10, 10, 0.1);
+  font-size: 200%;
+  margin: 0 auto;
+}
+
+h2 {
+  /*background-color: #69A2B0;*/
+  color: #022b3a;
+  margin: 20px 0px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+p {
+  padding-bottom: 20px;
+}
+
+.nav-arrow {
+  margin: 10px 0px;
+  font-size: 1.3em;
+}
+
+.nav-arrow:hover {
+  color: pink;
+}
+
+@media (min-width: 1000px) {
+  /* For a screen < 960px, this CSS will be read */
+  body {
+    font-size: 1.3em;
+  }
+}
+
+@media (max-width: 960px) {
+  /* For a screen < 960px, this CSS will be read */
+  .container {
+    width: 70vw;
+  }
+}
+@media (max-width: 720px) {
+  /* For a screen < 720px, this CSS will be read */
+  .projects-container {
+    height: 100%;
+  }
+
+  #project-boxes {
+    flex-direction: column;
+    margin: 0 auto;
+  }
+
+  .project-box {
+    width: 100%;
+  }
+
+  #btn-blue {
+    display: none;
+  }
+
+  body,
+  .logo {
+    font-size: 1em;
+  }
+}
+@media (max-width: 450px) {
+  /* For a screen < 540px, this CSS will be read */
+  /*  .container {
+    width: 70vw;
+  }
+  .container {
+    grid-template-columns: 1fr;
+  }*/
+
+  #about-container {
+    height: 100%;
+  }
+  #section {
+    height: 100%;
+    margin: 20px auto;
+  }
+
+  body,
+  .logo {
+    font-size: 1em;
+  }
+
+  h2,
+  p {
+    margin: 10px 5px;
+  }
+
+  #heading-big {
+    width: 60%;
+  }
+
+  .avatar {
+    width: 120px;
+    height: 120px;
+  }
+
+  .nav-links {
+    justify-content: space-between;
+    width: 50vw;
+  }
+
+  .project-box img {
+    width: 100%;
+    background-size: cover;
+    border-radius: 2px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: all 0.2s ease-in-out;
+  }
+}
+
+@media (max-width: 250px) {
+  /* For a screen < 540px, this CSS will be read */
+  body,
+  .logo {
+    font-size: 1em;
+  }
+
+  h2,
+  p {
+    margin: 10px 5px;
+  }
+
+  .nav-links {
+    justify-content: space-between;
+    width: 50vw;
+  }
+  img {
+    max-width: 130px;
+    max-height: 130px;
+  }
+}
