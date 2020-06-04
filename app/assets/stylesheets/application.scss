@@ -24,14 +24,21 @@ body {
   color: #757575;
   font-family: "Roboto", sans-serif;
   text-align: center;
-  background-image: asset-data-url("banner.jpg");
-  background-size: cover;
   /* font-size: 10px; */
-  margin: 0px;
-  width: 100vw;
+  height: 100%;
+}
+
+.bg {
+  /* The image used */
+  background-image: asset-data-url("background.jpg");
+
+  /* Full height */
   height: 100vh;
-  background-size: 100vw;
+
+  /* Center and scale the image nicely */
+  // background-position: center;
   background-repeat: no-repeat;
+  background-size: 100vh;
   background-attachment: fixed;
 }
 
@@ -70,107 +77,30 @@ p {
 a:hover {
   color: #de744d;
 }
+@media (min-width: 2000px) {
+  /* For a screen < 960px, this CSS will be read */
+  body {
+    background-size: 50vw;
+  }
+}
 @media (min-width: 1000px) {
   /* For a screen < 960px, this CSS will be read */
   body {
-    font-size: 1.3em;
+    background-size: 50vw;
   }
 }
 
 @media (max-width: 960px) {
   /* For a screen < 960px, this CSS will be read */
-  .container {
-    width: 70vw;
-  }
 }
 @media (max-width: 720px) {
   /* For a screen < 720px, this CSS will be read */
-  .projects-container {
-    height: 100%;
-  }
-
-  #project-boxes {
-    flex-direction: column;
-    margin: 0 auto;
-  }
-
-  .project-box {
-    width: 100%;
-  }
-
-  #btn-blue {
-    display: none;
-  }
-
-  body,
-  .logo {
-    font-size: 1em;
+  body {
+    background-size: 100vh;
   }
 }
 @media (max-width: 450px) {
-  /* For a screen < 540px, this CSS will be read */
-  /*  .container {
-    width: 70vw;
-  }
-  .container {
-    grid-template-columns: 1fr;
-  }*/
-
-  #about-container {
-    height: 100%;
-  }
-  #section {
-    height: 100%;
-    margin: 20px auto;
-  }
-
-  body,
-  .logo {
-    font-size: 1em;
-  }
-
-  h2,
-  p {
-    margin: 10px 5px;
-  }
-
-  .avatar {
-    width: 120px;
-    height: 120px;
-  }
-
-  .nav-links {
-    justify-content: space-between;
-    width: 50vw;
-  }
-
-  .project-box img {
-    width: 100%;
-    background-size: cover;
-    border-radius: 2px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-    transition: all 0.2s ease-in-out;
-  }
 }
 
 @media (max-width: 250px) {
-  /* For a screen < 540px, this CSS will be read */
-  body,
-  .logo {
-    font-size: 1em;
-  }
-
-  h2,
-  p {
-    margin: 10px 5px;
-  }
-
-  .nav-links {
-    justify-content: space-between;
-    width: 50vw;
-  }
-  img {
-    max-width: 130px;
-    max-height: 130px;
-  }
 }
