@@ -21,11 +21,10 @@ html {
 }
 
 body {
-  color: #757575;
+  color: rgba(0, 0, 0, 0.5);
   font-family: "Roboto", sans-serif;
   text-align: center;
   /* font-size: 10px; */
-  height: 100%;
 }
 
 .bg {
@@ -33,13 +32,13 @@ body {
   background-image: asset-data-url("background.jpg");
 
   /* Full height */
-  height: 100vh;
+  background-size: 100vw 100vh;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 
   /* Center and scale the image nicely */
   // background-position: center;
-  background-repeat: no-repeat;
-  background-size: 100vh;
-  background-attachment: fixed;
 }
 
 p {

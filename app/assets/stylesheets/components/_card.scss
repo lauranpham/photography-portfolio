@@ -10,8 +10,7 @@
 .card {
   display: flex;
   justify-content: center;
-  padding: 5px;
-  box-sizing: border-box;
+  padding: 2px;
   p {
     min-height: 72px !important;
   }
@@ -19,9 +18,16 @@
     margin-bottom: 1.5rem;
   }
 }
+
 .card img {
-  max-height: 100%;
+  // max-height: 100%;
   width: 100%;
+  opacity: 0.9;
+  height: 40vh;
+  object-fit: cover;
+}
+.card img:hover {
+  opacity: 1;
 }
 
 .landing-card-image {

@@ -10,7 +10,7 @@ Photo.destroy_all
 
 p "Creating photos"
 japan_count = 1
-10.times do 
+9.times do 
     Photo.create!(src: "japan" + japan_count.to_s + ".jpg", name: "japan" + japan_count.to_s, description: "A photo walk through japan" )
     japan_count += 1
 end 
