@@ -2,6 +2,7 @@
 <h1>Portfolio</h1>
 <div class="cards">
 <% @photos.each do |photo| %>
+    <% next if (image_tag asset_path(photo.src)).nil? %> 
     <div class="card">
         <%= image_tag asset_path(photo.src)%>
     </div>
